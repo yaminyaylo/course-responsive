@@ -1,20 +1,216 @@
+@import "common.less";
+
 body {
+  background: none repeat scroll 0 0 #FBFAF5;
+  font-family: "adobe-garamond-pro",georgia,serif;
+}
 
-
+header, section, footer {
+  display: block;
+  color: #38341C;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 auto;
+  max-width: 950px;
+  text-align: justify;
 }
 
 header {
+  border-bottom: 2px solid #D4583C;
 
+ h1 {
+    color: #222222;
+    font-family: "adelle",sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 0 0 -25%;
+    padding: 90px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h1 span {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-left: -25%;
+    text-transform: capitalize;
+  }
+  h1 .h-indent {
+    font-family: "adobe_garamond_probold",sans-serif;
+    clear: both;
+    display: block;
+    font-size: 72px;
+    line-height: 72px;
+    margin: auto;
+    text-transform: uppercase;
+  }
 }
-
 
 section{
   border-bottom: 1px solid #D2D1C8;
   overflow: auto;
   padding: 0 0 50px;
+
+  h2 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #D2D1C8;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0;
+    clear: both;
+    font-size: 18px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 300;
+    line-height: 18px;
+    margin: 30px 0 20px;
+    padding: 12px 0;
+    text-align: center;
+  }
+  p {
+    -moz-hyphens: auto;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    text-indent: 15px;
+  }
 }
 
+.n-intro {
+  overflow: auto;
+  position: relative;
+
+  img {
+    bottom: 10px;
+    left: 3%;
+    position: absolute;
+    width: 20%;
+  }
+  p:first-child:first-letter {
+    float: left;
+    font-family: "adelle",sans-serif;
+    font-size: 72px;
+    line-height: 60px;
+    margin-right: 3px;
+    padding: 4px;
+  }
+  p:first-child {
+    text-indent: 0;
+  }
+  .col {
+    -moz-column-gap: 25px;
+    -moz-columns: 2 auto;
+    display: inline;
+    float: right;
+    margin: 30px 1% 0 0;
+    padding-bottom: 20px;
+    width: 67%;
+  }
+}
+
+.n-types {
+  .type {
+    display: inline;
+    float: left;
+    padding: 0 1.5% 1.5%;
+    width: 30%;
+    
+
+    h4 {
+      background: url("http://dl.dropbox.com/u/5388661/introducingthenovel/img/type_icons.gif") no-repeat scroll right 0 transparent;
+      font-family: "adelle",sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+      margin: 0 0 5px;
+      padding: 15px 0 1px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 10px;
+      text-indent: 0;
+    }
+    span {
+      clear: both;
+      font-size: 12px;
+      line-height: 14px;
+      margin: 10px 0 0;
+      padding-top: 20px;
+      text-indent: 0;
+
+      a {
+        background: none repeat scroll 0 0 #F1F0EB;
+        color: #D4583C;
+        font-style: italic;
+        padding: 2px 0;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.n-times {
+  background: none repeat scroll 0 0 #EBEAE4;
+  clear: both;
+  display: inline;
+  float: left;
+  margin: 20px 0 40px;
+  padding: 30px 5% 0;
+
+  h4 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #D2D1C8;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 1px;
+    clear: both;
+    font-family: "adobe-garamond-pro",georgia,serif;
+    font-size: 18px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 300;
+    line-height: 18px;
+    margin: 0 0 15px;
+    padding: 0 0 12px;
+    text-align: center;
+  }
+  .col {
+    -moz-column-gap: 15px;
+    -moz-columns: 3 auto;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 30px;
+
+    p:first-child {
+      text-indent: 0;
+    }
+  }
+}
+
+.n-find {
+
+  p {
+    -moz-hyphens: none;
+    padding: 10px 5% 0;
+    text-indent: 0;
+  }
+}
 
 footer {
+  font-size: 9px;
+  line-height: 14px;
+  margin-bottom: 120px;
+  text-align: right;
 
+  p {
+    margin: 10px 1%;
+  }
 }
